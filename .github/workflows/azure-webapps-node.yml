@@ -21,17 +21,16 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: "docs" # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: "16.x" # set this to the node version to use
 
-defaults:
-  run:
-    shell: bash
-    working-directory: docs
-
 permissions:
   contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: docs
     steps:
       - uses: actions/checkout@v3
 
