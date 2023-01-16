@@ -24,26 +24,27 @@ env:
 permissions:
   contents: read
 
+defaults:
+  run:
+    shell: bash
+    working-directory: docs
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docs
     steps:
       - uses: actions/checkout@v3
-      - name: temp test
-        run: |
-          pwd
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
+          cache-dependency-path: docs/yarn.lock
 
       - name: npm install, build, and test
         run: |
+          pwd
           yarn install
           yarn build --if-present
           yarn dev --if-present
