@@ -29,10 +29,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: bash
         working-directory: docs
     steps:
       - uses: actions/checkout@v3
+      - name: temp test
+        run: |
+          pwd
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
