@@ -46,8 +46,8 @@ jobs:
         run: |
           pwd
           yarn install
-          yarn build --if-present
-          yarn dev --if-present
+          yarn build
+          yarn dev
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
