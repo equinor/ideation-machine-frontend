@@ -12,8 +12,8 @@
 name: Deploy to app-im-frontend
 
 on:
-  push:
-    branches: ["main"]
+  # push:
+  #   branches: ["main"]
   workflow_dispatch:
 
 env:
@@ -47,6 +47,10 @@ jobs:
           pwd
           yarn install
           yarn build
+
+      - name: Zip all files for upload between jobs
+        # IMPORTANT: .next is a hidden folder and will NOT be included in the zip unless we specify it
+        run: zip next.zip ./* .next -qr
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3

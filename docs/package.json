@@ -7,7 +7,7 @@
     "name": "Morten",
     "email": "imdevopsnotify@StatoilSRM.onmicrosoft.com"
   },
-  "repository": "https://github.com/equinor/ideation-machine-frontend/ideation-machine-frontend",
+  "repository": "https://github.com/equinor/ideation-machine-frontend",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
