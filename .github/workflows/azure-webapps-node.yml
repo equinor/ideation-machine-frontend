@@ -47,7 +47,10 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npm run build
+        run: |
+          pwd
+          ls
+          npm run build
 
       - name: Azure Deploy
         uses: Azure/static-web-apps-deploy@v1
