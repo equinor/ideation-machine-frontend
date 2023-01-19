@@ -60,6 +60,8 @@ jobs:
           ls src 
           echo " "
           ls -la .vuepress
+          echo " "
+          ls -la .vuepress/dist
         continue-on-error: true
 
       - name: Azure Deploy
