@@ -49,9 +49,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Scully
-        run: npm run scully
-
       - name: Azure Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
