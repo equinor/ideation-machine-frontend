@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/115a0693-7b56-4f35-8b25-7898d4b60cef/AppServices/subscriptions/115a0693-7b56-4f35-8b25-7898d4b60cef/resourceGroups/rg-im-frontend/providers/Microsoft.Web/sites/app-im-frontend",
+    "appService.deploySubpath": "../docs/src/.vuepress/dist"
+}
