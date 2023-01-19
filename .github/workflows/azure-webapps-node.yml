@@ -12,8 +12,8 @@
 name: Deploy to app-im-frontend
 
 on:
-  # push:
-  #   branches: ["main"]
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 env:
