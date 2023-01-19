@@ -4,7 +4,8 @@
   "description": "Landing page for the Ideation Machine Project",
   "main": "index.js",
   "scripts": {
-    "build": "vuepress build"
+    "build": "vuepress build",
+    "dev": "vuepress dev"
   },
   "repository": {
     "type": "git",
