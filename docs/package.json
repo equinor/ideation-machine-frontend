@@ -1,5 +1,5 @@
 {
-  "name": "ideation-machine-frontend",
+  "name": "app-im-frontend",
   "version": "0.0.1",
   "description": "Landing page of the Ideation Machine project",
   "main": "index.js",
