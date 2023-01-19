@@ -50,8 +50,16 @@ jobs:
         run: |
           pwd
           ls src
-          ls src/dist
           npm run build
+
+      - name: test
+        run: |
+          pwd
+          ls 
+          echo "linechange"
+          ls src 
+          echo "linechange"
+          ls src/dist
 
       - name: Azure Deploy
         uses: Azure/static-web-apps-deploy@v1
