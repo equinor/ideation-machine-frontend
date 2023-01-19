@@ -1,0 +1,23 @@
+{
+  "name": "ideation-machine-frontend",
+  "version": "1.0.0",
+  "description": "Landing page for the Ideation Machine Project",
+  "main": "index.js",
+  "scripts": {
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equinor/ideation-machine-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/equinor/ideation-machine-frontend/issues"
+  },
+  "homepage": "https://github.com/equinor/ideation-machine-frontend#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.8"
+  }
+}
