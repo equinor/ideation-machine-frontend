@@ -61,7 +61,7 @@ jobs:
           echo " "
           ls -la .vuepress
           echo " "
-          ls -la .vuepress/dist
+          ls -la .vuepress/dist/src
         continue-on-error: true
 
       - name: Azure Deploy
@@ -70,8 +70,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_RED_GRASS_029C6C103 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "dist"
+          app_location: ".vuepress/dist/src"
           api_location: ""
           output_location: ""
           skip_app_build: true
-          skip_api_build: true
