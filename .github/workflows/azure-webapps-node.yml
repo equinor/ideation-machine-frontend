@@ -49,7 +49,8 @@ jobs:
       - name: Build
         run: |
           pwd
-          ls
+          ls src
+          ls src/dist
           npm run build
 
       - name: Azure Deploy
