@@ -55,11 +55,12 @@ jobs:
       - name: test
         run: |
           pwd
-          ls 
+          ls -la
           echo "linechange"
           ls src 
           echo "linechange"
-          ls src/dist
+          ls .vuepress
+        continue-on-error: true
 
       - name: Azure Deploy
         uses: Azure/static-web-apps-deploy@v1
