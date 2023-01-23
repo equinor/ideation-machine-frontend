@@ -1,24 +1,19 @@
 {
   "name": "ideation-machine-frontend",
-  "version": "1.0.0",
-  "description": "Landing page for the Ideation Machine Project",
+  "version": "0.0.1",
+  "description": "Ideation Machine landing page",
   "main": "index.js",
+  "authors": {
+    "name": "Ideation Machine",
+    "email": "imdevopsnotify@StatoilSRM.onmicrosoft.com"
+  },
+  "repository": "https://github.com/equinor/ideation-machine-frontend.git/ideation-machine-frontend",
   "scripts": {
-    "build": "vuepress build",
-    "dev": "vuepress dev"
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/equinor/ideation-machine-frontend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/equinor/ideation-machine-frontend/issues"
-  },
-  "homepage": "https://github.com/equinor/ideation-machine-frontend#readme",
+  "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.8"
+    "vuepress": "^1.9.2"
   }
 }
