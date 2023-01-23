@@ -9,8 +9,10 @@
   },
   "repository": "https://github.com/equinor/ideation-machine-frontend.git/ideation-machine-frontend",
   "scripts": {
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
+    "build": "NODE_OPTIONS=--openssl-legacy-provide && vuepress build src",
+    "dev-win": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
+    "build-win": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
