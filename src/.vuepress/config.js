@@ -42,6 +42,10 @@ module.exports = {
         link: '/config/'
       },
       {
+        text: 'Docs',
+        link: '/docs/'
+      },
+      {
         text: 'VuePress',
         link: 'https://v1.vuepress.vuejs.org'
       }
@@ -57,6 +61,18 @@ module.exports = {
           ]
         }
       ],
+      '/docs/': [
+        {
+          title: 'Docs',
+          collapsable: false,
+          children: [
+            '',
+            'network/',
+            'disaster-recovery/',
+          ]
+        }
+      ],
+
     }
   },
 
