@@ -38,10 +38,6 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
         text: 'Docs',
         link: '/docs/'
       },
@@ -55,6 +51,7 @@ module.exports = {
         {
           title: 'Guide',
           collapsable: false,
+          sidebarDepth: 2,
           children: [
             '',
             'using-vue',
@@ -65,14 +62,16 @@ module.exports = {
         {
           title: 'Docs',
           collapsable: false,
+          sidebarDepth: 2,
           children: [
             '',
-            'network/',
             'disaster-recovery/',
+            'contact/',
+            'access/'
           ]
         }
       ],
-
+      '/': [], // Fallback to README.md
     }
   },
 
