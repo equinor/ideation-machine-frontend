@@ -4,13 +4,11 @@ title: Docs
 
 # Documentation topics
 
-## Getting started
+## Contact
+- [Contact](contact/)
 
-## Communication 
-
-## Support
-
-## About us
+## Environments
+- [Environments](environments/)
 
 ## Technical information
 
