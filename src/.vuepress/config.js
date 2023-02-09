@@ -16,7 +16,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#243746' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -27,23 +27,33 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    logo: 'https://raw.githubusercontent.com/equinor/ideation-machine-frontend/ab4e09d820b8442b079793a007557267568a2723/src/NIdeationMachineLogo-NoSlogan.svg',
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
     nav: [
+
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Docs',
+        link: 'https://docs.ideation.equinor.com/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Get started',
+        link: ''
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'About us',
+        link: ''
+      },
+      {
+        text: 'Contact us',
+        link: ''
+      },
+      {
+        text: 'Use cases',
+        link: ''
       }
     ],
     sidebar: {
