@@ -37,7 +37,7 @@ module.exports = {
 
       {
         text: 'Docs',
-        link: 'https://docs.ideation.equinor.com/'
+        link: 'docs/'
       },
       {
         text: 'Get started',
