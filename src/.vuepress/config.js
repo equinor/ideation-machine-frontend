@@ -77,7 +77,8 @@ module.exports = {
             '',
             'disaster-recovery/',
             'contact/',
-            'access/'
+            'access/',
+            'azure-ml/'
           ]
         }
       ],
