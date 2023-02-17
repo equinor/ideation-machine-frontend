@@ -36,11 +36,11 @@ To be able to retrieve the access keys you can either go to the Azure ML Workspa
 
 Both ways requires the following:  
 1. You have logged in to your Azure account
-2. You have access to the Azure Machine Learning Workspace
+2. You have access to the Azure Machine Learning Workspace (Reader access is not enough)
 
 The disadvantage by using the access keys is that they don't expire, so if a key is 'lost' (pushed to a github repo, shared with some users over insecure channels etc..) it might end up in the wrong hands and can be used for accessing the model.
 
-Which is why we choose to use:
+Which is why we have chosen to use:
 
 #### AML tokens
 
@@ -54,8 +54,10 @@ To be able to retrieve the AML token you can either go to the Azure ML Workspace
 
 Both ways requires the following:  
 1. You have logged in to your Azure account
-2. You have access to the Azure Machine Learning Workspace
+2. You have access to the Azure Machine Learning Workspace (Reader is not enough)
 
 ## Network access
 
-Open for 
+The endpoint is open on the public network.  
+Which means if you have the token you have access to the model and can make preditions on it.  
+The endpoint is on https so the network traffic is encrypted
