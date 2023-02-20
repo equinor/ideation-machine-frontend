@@ -23,7 +23,13 @@ An Azure ML deployment is the resources hosting the model that users can query v
 
 ![](../../assets/docs/endpoint-concept.png)
 
-## How to access the endpoints
+## Network access
+
+The endpoint is open on the public network.  
+Which means if you have a valid token you have access to the model and can make preditions on it.  
+The endpoint is on https so the network traffic is encrypted
+
+## How to authenticate to the endpoints
 
 There are two ways to authenticate to the endpoint:
 
@@ -56,8 +62,3 @@ Both ways requires the following:
 1. You have logged in to your Azure account
 2. You have access to the Azure Machine Learning Workspace (Reader is not enough)
 
-## Network access
-
-The endpoint is open on the public network.  
-Which means if you have the token you have access to the model and can make preditions on it.  
-The endpoint is on https so the network traffic is encrypted
