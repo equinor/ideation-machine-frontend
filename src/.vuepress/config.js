@@ -37,7 +37,7 @@ module.exports = {
 
       {
         text: 'Docs',
-        link: 'https://docs.ideation.equinor.com/'
+        link: 'docs/'
       },
       {
         text: 'Get started',
@@ -61,12 +61,28 @@ module.exports = {
         {
           title: 'Guide',
           collapsable: false,
+          sidebarDepth: 2,
           children: [
             '',
             'using-vue',
           ]
         }
       ],
+      '/docs/': [
+        {
+          title: 'Docs',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            '',
+            'disaster-recovery/',
+            'contact/',
+            'access/',
+            'azure-ml/'
+          ]
+        }
+      ],
+      '/': [], // Fallback to README.md
     }
   },
 
