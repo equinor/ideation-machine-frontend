@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         text: 'Use cases',
-        link: ''
+        link: 'use-cases/'
       }
     ],
     sidebar: {
@@ -79,6 +79,22 @@ module.exports = {
             'contact/',
             'access/',
             'azure-ml/'
+          ]
+        }
+      ],
+      '/use-cases/': [
+        {
+          title: 'Use Cases',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            '',
+            'EPI SUB EXD Global Analytics',
+            'ESP analytics - Peregino Brazil',
+            'GOC - data driven well placement',
+            'H2S reservoir sounding',
+            'MMP - natural gas trading prediction',
+            'Mud gas - real time fluid idntification'
           ]
         }
       ],
